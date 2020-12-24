@@ -1,0 +1,76 @@
+:root {
+    --main-color: #8f8f8f;
+    --active-color: #9e8157;
+    --header-font: 'Playfair Display', serif;
+    --main-font: 'Poppins', sans-serif;;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Responsive */
+
+.grid {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full_width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    /* margin-left: 35px; */
+}
+
+.grid__row--modified {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+/* Test */
+
+.grid__column-9 {
+    width: 75%;
+    margin-left: 24px;
+}
+
+.grid__column-3 {
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.grid__column-5 {
+    width: 41.6667%;
+}
+
+.grid__column-7 {
+    width: 58.3333%;
+    margin-right: 12px;
+}
+
+.grid__column-2 {
+    width: 16.6667%;
+}

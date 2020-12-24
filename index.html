@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="asset/css/base.css">
+        <link rel="stylesheet" href="asset/css/main.css">
+        <script>
+            function navOpen() {
+                document.querySelector('.navbar__menu--icon').style.display = 'none';
+                document.querySelector('.navbar__menu--close').style.display = 'block';
+                document.querySelector('.navbar__menu').style.display = 'flex';
+            }
+            function navClose(){
+                document.querySelector('.navbar__menu--icon').style.display = 'flex';
+                document.querySelector('.navbar__menu--close').style.display = 'none';
+                document.querySelector('.navbar__menu').style.display = 'none';
+            }
+        </script>
+    </head>
+    <body id="body">
+        <header class="header">
+            <nav class="navbar">
+                <a href="#body">
+                    <div class="logo"></div>
+                </a>
+                <ul class="navbar__menu">
+                    <li class="navbar__menu--item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="navbar__menu--item">
+                        <a href="#">Discover</a>
+                    </li>
+                    <li class="navbar__menu--item">
+                        <a href="#">Crew</a>
+                    </li>
+                    <li class="navbar__menu--item">
+                        <a href="#">Projects</a>
+                    </li>
+                    <li class="navbar__menu--item">
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li class="navbar__menu--item navbar__menu--active">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="navbar__menu--item">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <!-- <div class="search">
+                    <input type="submit" value="" class="submit">
+                    <input type="text" name="" class="text">
+                </div> -->
+                <div class="navbar__icon">
+                    <div class="search">
+                        <span>SEARCH</span>
+                        <span>
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                    <div onclick="navOpen()" class="navbar__menu--icon">
+                        <span>MENU</span>
+                        <span>
+                            <i class="fas fa-bars"></i>
+                        </span>
+                        <ul class="navbar__menu" style="display: none;">
+                            <li class="navbar__menu--item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="navbar__menu--item">
+                                <a href="#">Discover</a>
+                            </li>
+                            <li class="navbar__menu--item">
+                                <a href="#">Crew</a>
+                            </li>
+                            <li class="navbar__menu--item">
+                                <a href="#">Projects</a>
+                            </li>
+                            <li class="navbar__menu--item">
+                                <a href="#">Gallery</a>
+                            </li>
+                            <li class="navbar__menu--item navbar__menu--active">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="navbar__menu--item">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div onclick="navClose()" class="navbar__menu--close">
+                        <span>CLOSE</span>
+                        <span>
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+            <div class="banner">
+                <h1>Blog List</h1>
+                <div class="banner__content">
+                    <span class="banner__content">Home /</span>
+                    <span class="banner__content banner__content--active">Blog List</span>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-9">
+                        <div class="grid__row grid__row--modified">
+                            <div class="grid__column-5">
+                                <div class="content__banner">
+                                    <p>29</p>
+                                    <p>JUNE</p>
+                                </div>
+                            </div>
+                            <div class="grid__column-7">
+                                <div class="content__text">
+                                    <span>Case Study</span>
+                                    <h4>Case Study: How we made “Go Explore Campaign”</h4>
+                                    <span>Donec eget nibh non nibh varius varius a vitae dolor. Ut ornare mollis lacus, non fringilla magna egestas mattis. Sed iaculis tortor magna, at tincidunt mi imperdiet in. </span>
+                                    <span>
+                                        <a href="#">Continue &rarr;</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__row grid__row--modified">
+                            <div class="grid__column-5">
+                                <div class="content__banner-1">
+                                    <p>25</p>
+                                    <p>JUNE</p>
+                                </div>
+                            </div>
+                            <div class="grid__column-7">
+                                <div class="content__text">
+                                    <span>Film Review</span>
+                                    <h4>Twin: The Face Off is going to win some awards</h4>
+                                    <span>Donec eget nibh non nibh varius varius a vitae dolor. Ut ornare mollis lacus, non fringilla magna egestas mattis. Sed iaculis tortor magna, at tincidunt mi imperdiet in. </span>
+                                    <span>
+                                        <a href="#">Continue &rarr;</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__row grid__row--modified">
+                            <div class="grid__column-5">
+                                <div class="content__banner-2">
+                                    <p>18</p>
+                                    <p>JUNE</p>
+                                </div>
+                            </div>
+                            <div class="grid__column-7">
+                                <div class="content__text">
+                                    <span>Film Production</span>
+                                    <h4>The Wild Desert: Behind the scene</h4>
+                                    <span>Donec eget nibh non nibh varius varius a vitae dolor. Ut ornare mollis lacus, non fringilla magna egestas mattis. Sed iaculis tortor magna, at tincidunt mi imperdiet in. </span>
+                                    <span>
+                                        <a href="#">Continue &rarr;</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__row grid__row--modified">
+                            <div class="grid__column-5">
+                                <div class="content__banner-3">
+                                    <p>18</p>
+                                    <p>JUNE</p>
+                                </div>
+                            </div>
+                            <div class="grid__column-7">
+                                <div class="content__text">
+                                    <span>Film Production</span>
+                                    <h4>The Wild Desert: Behind the scene</h4>
+                                    <span>Donec eget nibh non nibh varius varius a vitae dolor. Ut ornare mollis lacus, non fringilla magna egestas mattis. Sed iaculis tortor magna, at tincidunt mi imperdiet in. </span>
+                                    <span>
+                                        <a href="#">Continue &rarr;</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__row grid__row--modified">
+                            <div class="grid__column-5">
+                                <div class="content__banner-4">
+                                    <p>18</p>
+                                    <p>JUNE</p>
+                                </div>
+                            </div>
+                            <div class="grid__column-7">
+                                <div class="content__text">
+                                    <span>Short Film</span>
+                                    <h4>How we make it: Into the Jungle</h4>
+                                    <span>Donec eget nibh non nibh varius varius a vitae dolor. Ut ornare mollis lacus, non fringilla magna egestas mattis. Sed iaculis tortor magna, at tincidunt mi imperdiet in. </span>
+                                    <span>
+                                        <a href="#">Continue &rarr;</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column-3">
+                        <div class="content__search">
+                            <input type="text" name="text" placeholder="Search..." size="15" class="content__input">
+                            <input type="submit" value="" class="content__submit">
+                        </div>
+                        <div class="content__recent">
+                            <span class="content__recent--item">RECENT POSTS</span>
+                            <span class="content__recent--item">
+                                <a href="#">Take a look at Mini Summer editorial 2017 for Kids</a>
+                            </span>
+                            <span class="content__recent--item">
+                                <a href="#">Baby boy capsule lookbook has just arrived to Minera</a>
+                            </span>
+                            <span class="content__recent--item">
+                                <a href="#">Baby girl be ready for the coming summer</a>
+                            </span>
+                        </div>
+                        <div class="categories">
+                            <span class="categories__item">CATEGORIES</span>
+                            <a href="#">
+                                <div class="categories__item categories__item--active">
+                                    <span>All Posts</span>
+                                    <span>291</span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="categories__item">
+                                    <span>Trending</span>
+                                    <span>92</span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="categories__item">
+                                    <span>Editorial</span>
+                                    <span>71</span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="categories__item">
+                                    <span>Fashionista</span>
+                                    <span>83</span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="categories__item">
+                                    <span>Design</span>
+                                    <span>45</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tags">
+                            <span>POPULAR TAGS</span>
+                            <div class="tags__item">
+                                <a href="#">
+                                    <span>minera, </span>
+                                </a>
+                                <a href="#">
+                                    <span class="tags__item--active">fashion, </span>
+                                </a>
+                                <a href="#">
+                                    <span>t-shirt, </span>
+                                </a>
+                                <a href="#">
+                                    <span>sweater, </span>
+                                </a>
+                                <a href="#">
+                                    <span>jeans, </span>
+                                </a>
+                                <a href="#">
+                                    <span>shoes, </span>
+                                </a>
+                                <a href="#">
+                                    <span>backpack, </span>
+                                </a>
+                                <a href="#">
+                                    <span>leggings, </span>
+                                </a>
+                                <a href="#">
+                                    <span>jackets, </span>
+                                </a>
+                                <a href="#">
+                                    <span>sneakers, </span>
+                                </a>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="page-num">
+                    <li class="page-num__item">
+                        <a href="#" class="page-num__link">
+                            <i class="fas fa-caret-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-num__item">
+                        <a href="#" class="page-num__link">1</a>
+                    </li>
+                    <li class="page-num__item">
+                        <a href="#" class="page-num__link">2</a>
+                    </li>
+                    <li class="page-num__item">
+                        <a href="#" class="page-num__link">3</a>
+                    </li>
+                    <li class="page-num__item">
+                        <a href="#" class="page-num__link">4</a>
+                    </li>
+                    <li class="page-num__item">
+                        <a href="#" class="page-num__link"><i class="fas fa-caret-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid_row footer__content">
+                    <div class="grid__column-3">
+                        <div class="logo__footer">
+                            <div class="logo"></div>
+                            <span>Filmic is one of the Hollywood’s “Big 10” film studios. And we 
+                            provide production solutions that make sense.</span>
+                        </div>
+                    </div>
+                    <div class="grid__column-2">
+                        <div class="services">
+                            <div class="services__item">SERVICES</div>
+                            <ul class="services__item">
+                                <a href="#">
+                                    <li class="services__item--mini">Film Production</li>
+                                </a>
+                                <a href="#">
+                                    <li class="services__item--mini">Creative Direction</li>
+                                </a>
+                                <a href="#">
+                                    <li class="services__item--mini">TVC Production</li>
+                                </a>
+                                <a href="#">
+                                    <li class="services__item--mini">Visual Effect</li>
+                                </a>
+                                <a href="#">
+                                    <li class="services__item--mini">Others</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid__column-2">
+                        <div class="links">
+                            <div class="links__item">LINKS</div>
+                            <ul class="links__item">
+                                <a href="#">
+                                    <li class="links__item--mini">Sitemap</li>
+                                </a>
+                                <a href="#">
+                                    <li class="links__item--mini">Terms & Conditions</li>
+                                </a>
+                                <a href="#">
+                                    <li class="links__item--mini">Privacy Policy</li>
+                                </a>
+                                <a href="#">
+                                    <li class="links__item--mini">Help</li>
+                                </a>
+                                <a href="#">
+                                    <li class="links__item--mini">Contact Us</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid__column-5">
+                        <div class="sub">
+                            <div class="sub__item">SUBSCRIPTION</div>
+                            <span class="sub__item">Get our latest news as quick as possible.</span>
+                            <span class="sub__item">By entering your email address below.</span>
+                            <span class="sub__item">
+                                <input type="email" placeholder="Email Address">
+                                <input type="submit" value="Subscribe">
+                            </span>
+                            <span class="sub__item">* Note: Your email will be kept secretly.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-end">
+                <div class="grid">
+                    <div class="grid__row footer-end__content">
+                        <article>
+                            © 2017 Filmic. All Rights Reserved. Designed by <a href="#">Lee Hari</a>.
+                        </article>
+                        <ul class="social">
+                            <a href="#">
+                                <li class="social__item social__item--active">FACEBOOK</li>
+                            </a>
+                            <a href="#">
+                                <li class="social__item">TWITTER</li>
+                            </a>
+                            <a href="#">
+                                <li class="social__item">INSTAGRAM</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
